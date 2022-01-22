@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/hotdawg-bun.svg" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 21, 33 )
+
+[node name="Hot Dogger" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 21, 33 )
+shape = SubResource( 1 )
+
+[node name="Hotdawg-bun" type="Sprite" parent="."]
+position = Vector2( 21, 33 )
+scale = Vector2( 0.0657894, 0.0588235 )
+texture = ExtResource( 1 )
