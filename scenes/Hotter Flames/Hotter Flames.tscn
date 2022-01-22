@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/flamethrowerstream.svg" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 56, 22 )
+
+[node name="Hotter Flames" type="Area2D"]
+visible = false
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -45, 21 )
+scale = Vector2( 0.0394647, 0.0337398 )
+texture = ExtResource( 1 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -57, 22 )
+shape = SubResource( 1 )
